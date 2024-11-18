@@ -57,19 +57,20 @@ export class ChatMainComponent {
         break
     }
 
-    if (window.screen.width <= 700) {
+    if (window.screen.width <= 900) {
       this.largura = {"margin-left": "-60%"}
-      this.largura_msg = {"margin-left": "6.3%"}
+      this.largura_msg = {"margin-left": "13.2vw"}
 
     } else {
       this.largura = {"margin-left": "-20%"}
+      this.largura_msg = {"margin-left": "15.5vw"}
 
     }
   }
 
   abrir_menu()
   {
-    if (window.screen.width <= 700) {
+    if (window.screen.width <= 900) {
       if (this.flag == false) {
         this.contatos = "contatos_escuro abrir_contatos_mobile"
         this.largura = {"margin-left": "20%"}
@@ -88,6 +89,7 @@ export class ChatMainComponent {
       if (this.flag == false) {
         this.contatos = "contatos_escuro abrir_contatos"
         this.largura = {"margin-left": "10%"}
+        this.largura_msg = {"margin-left": "10vw"}
         this.flag = true
   
       } else {
