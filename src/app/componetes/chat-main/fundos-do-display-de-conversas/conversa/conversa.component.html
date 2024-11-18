@@ -1,0 +1,21 @@
+<div class="corpo">
+    <img class="foto_perfil" src="https://th.bing.com/th/id/OIP.GEx4LHESj2n7btFdpfvSZQHaLb?rs=1&pid=ImgDetMain" alt="Foto de perfil">
+
+    <!-- Aqui está um exemplo das mensagens enviadas -->
+
+    <!-- Conversa recebida -->
+
+    <div [ngClass]="'container_conversas ' + fundo2">
+        <p class="container_conversas_user_name">Nome do usúario</p>
+        <p class="container_conversas_mensagem">mensagem muito massa</p>
+        <p class="container_conversas_data">17/11/2024</p>
+    </div>
+
+    <!-- Mensagem enviada -->
+
+    <div [ngClass]="'container_conversas container_conversas_enviadas ' + fundo2">
+        <p class="container_conversas_user_name">Nome do usúario</p>
+        <p class="container_conversas_mensagem">mensagem muito massa</p>
+        <p class="container_conversas_data">17/11/2024</p>
+    </div>
+</div>

@@ -1,0 +1,247 @@
+.corpo{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+hr{
+    margin-top: 4%;
+    background-color: grey;
+}
+/* Fundos escuro e claro de algumas divs */
+.bg_claro{
+    background-color: white;
+}
+.bg_escuro{
+    background-color: black;
+}
+
+/* Cores escuro e claro de alguns inputs */
+.inputs_textos_escuro{
+    background-color: grey;
+    color: white;
+}
+.inputs_textos_claro{
+    background-color: white;
+    color: black;
+}
+.inputs_textos_escuro::placeholder{
+    color: white;
+}
+/* contatos dos usúarios */
+.contatos_user_escuro{
+    background-color: grey;
+    color: white;
+}
+.contatos_user_claro{
+    background-color: rgb(110, 110, 255);
+}
+.contatos_user_escuro:hover{
+    background-color: rgb(87, 87, 87);
+}
+.contatos_user_claro:hover{
+    background-color: rgb(81, 81, 255);
+}
+
+.botao_enviar_escuro{
+    background-color: rgb(80, 80, 80);
+}
+.botao_enviar_claro{
+    background-color: rgb(110, 110, 255);
+}
+.botao_enviar_claro:hover{
+    background-color: rgb(65, 65, 255);
+}
+.mudar_fundo{
+    position: fixed;
+    margin-left: 91.4%;
+    margin-top: 1.5%;
+    height: 7.6%;
+}
+
+.config_escuro{
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    justify-items: center;
+    border-right: 4px solid gray;
+}
+/* .config_claro{
+
+} */
+
+.contatos_escuro{
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    border-right: 4px solid gray;
+}
+.fechar_contatos{
+    animation: fechar_contato 2s ease forwards;
+}
+@keyframes fechar_contato {
+    0%{
+        margin-left: 10%;
+    }
+    100%{
+        margin-left: -20%;
+    }
+}
+.abrir_contatos{
+    animation: abrir_contato 2s ease forwards;
+}
+@keyframes abrir_contato {
+    0%{
+        margin-left: -20%;
+    }
+    100%{
+        margin-left: 10%;
+    }
+}
+/* Versão mobile */
+.fechar_contatos_mobile{
+    animation: fechar_contato_mobile 2s ease forwards;
+}
+@keyframes fechar_contato_mobile {
+    0%{
+        margin-left: 20%;
+    }
+    100%{
+        margin-left: -60%;
+    }
+}
+.abrir_contatos_mobile{
+    animation: abrir_contato_mobile 2s ease forwards;
+}
+@keyframes abrir_contato_mobile {
+    0%{
+        margin-left: -60%;
+    }
+    100%{
+        margin-left: 20%;
+    }
+}
+.campo_pesquisa_contatos{
+    height: 9%;
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 10%;
+    font-size: 140%;
+    padding-left: 5%;
+}
+.container_contatos{
+    height: 84.6%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container_contatos_users{
+    display: flex;
+    height: 20%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.container_contatos_users_foto{
+    height: 60px;
+    width: 60px;
+    margin: 10% 5%;
+    border-radius: 2em;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.container_contatos_users_nome{
+    margin-top: 18%;
+}
+.menu{
+    margin-top: 20%;
+    width: 50%;
+    display: block;
+}
+/* .contatos_claro{
+
+} */
+
+.esconder_mensagens{
+    position: fixed;
+}
+.mensagens{
+    margin-left: 10%;
+    height: 100%;
+    width: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.mensagens_recebidas{
+    height: 85%;
+    width: 100%;
+}
+.mensagens_recebidas_conversas{
+    height: 100%;
+}
+.envio_mensagem{
+    height: 15%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.envio_mensagem_campo_envio{
+    height: 100%;
+    width: 100%;
+    font-size: 150%;
+    padding-left: 2%;
+    border-radius: 1em;
+}
+.envio_mensagem_botao_enviar{
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+    .corpo{
+        width: 100%;
+    }
+    .mensagens{
+        margin-left: 20%;
+        width: 80%;
+    }
+    .mudar_fundo{
+        margin-top: 6%;
+        margin-left: 81.5%;
+    }
+    .fechar_contatos_mobile{
+        animation: fechar_contato_mobile 2s ease forwards;
+    }
+    @keyframes fechar_contatos_mobile {
+        0%{
+            margin-left: 20%;
+        }
+        100%{
+            margin-left: -60%;
+        }
+    }
+    .abrir_contatos_mobile{
+        animation: abrir_contato_mobile 2s ease forwards;
+    }
+    @keyframes abrir_contatos_mobile {
+        0%{
+            margin-left: -60%;
+        }
+        100%{
+            margin-left: 20%;
+        }
+    }
+    .mensagens_recebidas{
+        height: 90%;
+    }
+    .envio_mensagem{
+        height: 10%;
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+    .config_escuro{
+        width: 20%;
+    }
+    .contatos_escuro{
+        position: fixed;
+        width: 70%;
+    }
+}

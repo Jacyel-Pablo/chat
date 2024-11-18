@@ -1,0 +1,24 @@
+<div [ngClass]="corpo">
+    <div [ngClass]="bg">
+        <img [ngClass]="'imagem_sol_lua'" (click)="botao_white_black_mode()" [src]="[imagem]" alt="Imagem de um sol">
+    </div>
+
+    <div [ngClass]="'container_login'">
+        <div [ngClass]="'campo_login'">
+
+            <h1 [ngClass]="titulo">Login</h1>
+
+            <p [ngClass]="paragrafor">Insira seu email:</p>
+
+            <input [ngClass]="inputs" type="email" [placeholder]="'Insira seu email:'">
+
+            <p [ngClass]="paragrafor">Insira sua senha:</p>
+
+            <input [ngClass]="inputs" type="password" [placeholder]="'Insira sua senha:'">
+            
+            <a [ngClass]="'campo_login_email campo_login_botao_entrar'" routerLink="/chat_main">Entrar</a>
+
+            <a [ngClass]="'campo_login_email campo_login_botao_entrar campo_login_botao_criar_conta'" routerLink="/criar_conta">Criar conta</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.display{
+    height: 100%;
+    align-content: center;
+}
+.texto{
+    text-align: center;
+    font-size: 300%;
+}
+.escuro{
+    color: white;
+}
+.claro{
+    color: black;
+}

@@ -1,0 +1,30 @@
+<div [ngClass]="corpo">
+    <div [ngClass]="bg">
+        <img [class]="'imagem_sol_lua'" (click)="botao_white_black_mode()" [src]="[imagem]" alt="Imagem de um sol">
+    </div>
+
+    <div [class]="'container_login'">
+        <div [class]="'campo_login'">
+
+            <h1 [class]="titulo">Criar Conta</h1>
+
+            <p [class]="paragrafor">Insira um nome de usúario:</p>
+
+            <input [class]="inputs" type="text" [placeholder]="'Insira um nome de usúario:'">
+
+            <p [class]="paragrafor">Insira uma descrição para seu perfil:</p>
+
+            <input [class]="inputs" type="text" [placeholder]="'Insira uma descrição para seu perfil'">
+
+            <p [class]="paragrafor">Insira um email:</p>
+
+            <input [class]="inputs" type="email" [placeholder]="'Insira um email:'">
+
+            <p [class]="paragrafor">Insira uma senha:</p>
+
+            <input [class]="inputs" type="password" [placeholder]="'Insira uma senha:'">
+            
+            <a [class]="'campo_login_email campo_login_botao_entrar campo_login_botao_abrir_conta'" routerLink="/">Criar Conta</a>
+        </div>
+    </div>
+</div>

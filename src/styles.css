@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+.claro_escuro{
+    height: 15%;
+    text-align: right;
+    align-content: center;
+}
+.imagem_sol_lua{
+    height: 50%;
+    margin-right: 5%;
+}

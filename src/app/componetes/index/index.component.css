@@ -1,0 +1,112 @@
+.corpo_escuro{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.corpo_claro{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+/* Parte da caixa de login */
+.container_login{
+    height: 70%;
+}
+.campo_login{
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: gray;
+    align-content: center;
+}
+.campo_login_titulo{
+    font-size: 300%;
+    color: white;
+}
+.campo_login_titulo_white_mode{
+    color: black;
+}
+
+.campo_login_texto{
+    color: white;
+    text-align: left;
+    font-size: 130%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+.campo_login_texto_white_mode{
+    color: black;
+}
+
+.campo_login_email{
+    color: white;
+    background-color: gray;
+    height: 10%;
+    width: 80%;
+    font-size: 130%;
+    padding-left: 2%;
+}
+.campo_login_email_criar_conta{
+    margin: -1% 0px;
+}
+.campo_login_email::placeholder{
+    color: rgb(204, 204, 204);
+}
+.campo_login_email_white_mode{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+.campo_login_email_white_mode::placeholder{
+    color: rgb(107, 107, 107);
+}
+.campo_login_botao_entrar{
+    padding-left: 0px;
+    margin-top: 5%;
+    background-color: blue;
+    border: 0px solid;
+    color: white;
+    display: block;
+    margin-left: 10%;
+    text-decoration: none;
+    align-content: center;
+}
+.campo_login_botao_entrar:hover{
+    color: rgb(134, 134, 134);
+    background-color: rgb(0, 0, 184);
+}
+
+.campo_login_botao_criar_conta{
+    border: 4px solid;
+    border-color: blue;
+    background-color: white;
+    color: blue;
+}
+.campo_login_botao_criar_conta:hover{
+    color: white;
+    background-color: blue;
+}
+
+.campo_login_botao_abrir_conta{
+    background-color: blue;
+    border: 0px solid;
+    color: white;
+    margin-left: 60%;
+    margin-top: 2.1%;
+    width: 30%;
+}
+.campo_login_botao_abrir_conta:hover{
+    color: rgb(134, 134, 134);
+    background-color: rgb(0, 0, 184);
+}
+
+@media only screen and (max-width: 500px) {
+    .campo_login{
+        width: 100%;
+    }
+}

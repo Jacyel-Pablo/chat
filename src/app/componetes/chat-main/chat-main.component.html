@@ -1,0 +1,56 @@
+<div [ngClass]="'corpo bg_' + fundo">
+
+    <img [ngClass]="'imagem_sol_lua mudar_fundo'" (click)="dia_noite()" [src]="[imagem]" alt="Imagem de um sol">
+
+    <!-- Tela invisel usada quando o menu de conversa está ativo -->
+    @if (flag == false) {
+        <div></div>
+    } @else {
+        <div class="mensagens esconder_mensagens" (click)="abrir_menu()"></div>
+    }
+
+    <div [ngClass]="contatos + ' bg_' + fundo" [ngStyle]="largura">
+        <input [ngClass]="'campo_pesquisa_contatos inputs_textos_' + fundo" type="text" [(ngModel)]="campo_contatos" [placeholder]="'Pesquisa'">
+        <div class="container_contatos">
+
+            <hr>
+            
+            <div [ngClass]="'container_contatos_users contatos_user_' + fundo" (click)="alterar_parte_conversa()">
+                <img [ngClass]="'container_contatos_users_foto'" [src]="'https://th.bing.com/th/id/OIP.GEx4LHESj2n7btFdpfvSZQHaLb?rs=1&pid=ImgDetMain'" [alt]="'Foto de perfil'">
+                <p [ngClass]="'container_contatos_users_nome'">Nome de usúario</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div [ngClass]="'config_escuro' + ' bg_' + fundo">
+        <!-- <img [ngClass]="'menu'" (click)="abrir_menu()" [src]="menu" alt="Menu abre e fecha"> -->
+        <!-- <img [ngClass]="'menu'" [src]="config_icone" alt="Configurações"> -->
+        <img [ngClass]="'menu'" (click)="abrir_menu()" [src]="'../../assets/Chat-main/Menu_' + img + '.png'" alt="Icones">
+        
+        <img [ngClass]="'menu'" [src]="'../../assets/Chat-main/Config_' + img + '.png'" alt="Icones">
+    </div>
+
+    <div [ngClass]="'mensagens'" [ngStyle]="largura_msg">
+        <!-- corpo das mensagens -->
+        <div [ngClass]="'mensagens_recebidas'">
+
+            @switch (display_conv) {
+                @case (1) {
+                    <app-default [ngClass]="'mensagens_recebidas_conversas'" [fundo2]="fundo"></app-default>
+                }
+                @case (2) {
+                    <app-conversa [fundo2]="fundo"></app-conversa>
+                }
+                @default {
+                    <app-default [ngClass]="'mensagens_recebidas_conversas'" [fundo2]="fundo"></app-default>
+                }
+            }
+        </div>
+
+        <div [ngClass]="'envio_mensagem'">
+            <input [ngClass]="'envio_mensagem_campo_envio inputs_textos_' + fundo" type="text" placeholder="Digite algo:">
+            <input [ngClass]="'envio_mensagem_botao_enviar botao_enviar_' + fundo" [type]="'button'" [value]="'Enviar'" [placeholder]="'Digite algo:'">
+        </div>
+    </div>
+</div>
